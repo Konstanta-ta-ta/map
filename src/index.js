@@ -8,7 +8,7 @@ import {Map} from "./Map";
 ReactDOM.render(
   <React.StrictMode>
       <Map />
-      <Dict />
+      {/*<Dict />*/}
   </React.StrictMode>,
   document.getElementById('root')
 );
