@@ -15,7 +15,7 @@ const dict = [
     {id: "KYA", name: "Красноярский край"},
     {id: "VNK", name: "Эвенкийский автономный округ"},
     {id: "SAK", name: "Якутская область"},
-    {id: "KHM", name: "Ханты-Мансийск автономный округ"},
+    {id: "KHM", name: "Ханты-Мансийский автономный округ"},
     {id: "SVE", name: "Свердловская область"},
     {id: "IRK", name: "Иркутская область"},
     {id: "UST", name: "Усть-Орднский автономный округ"},
@@ -129,9 +129,9 @@ export class Map extends React.Component {
             <div>
                 <div style={{position: 'absolute', top: this.state.y, left: this.state.x,
                     border: '2px solid',
-                    borderRadius: '10px',
-                    borderColor: '#f3e5ab',
-                    backgroundColor: '#fffacd',
+                    borderRadius: '10px 100px/120px',
+                    borderColor: '#23aea3',
+                    backgroundColor: '#30d5c8',
                     padding: '5px'}}>{this.state.text}</div>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                  viewBox="0 0 2004.22 1130.15" xmlSpace="preserve">
