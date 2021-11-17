@@ -106,8 +106,6 @@ export class Map extends React.Component {
         }
     }
 
-
-
     clickMap = (e) => {
         const idToSearch = e.target.getAttribute("id");
         this.setState({ x: e.pageX, y: e.screenY + (e.pageY - e.screenY) });
@@ -129,7 +127,12 @@ export class Map extends React.Component {
     render() {
         return(
             <div>
-                <div style={{position: 'absolute', top: this.state.y, left: this.state.x }}>{this.state.text}</div>
+                <div style={{position: 'absolute', top: this.state.y, left: this.state.x,
+                    border: '2px solid',
+                    borderRadius: '10px',
+                    borderColor: '#f3e5ab',
+                    backgroundColor: '#fffacd',
+                    padding: '5px'}}>{this.state.text}</div>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                  viewBox="0 0 2004.22 1130.15" xmlSpace="preserve">
             <g id="Sea" className="st0">
